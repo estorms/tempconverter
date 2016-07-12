@@ -1,4 +1,9 @@
 /* function convertTemp() {
+  //var temp = document.getElementById("temp").value;
+  //var convertedTemp = document.getElementById("convertedTemp");
+  //var convertedTemp = document.getElementById("convertedTemp");
+  //convertedTemp.innerText = "Work, motherfucker";
+
   var temp = document.getElementById("temp").value;
   if (document.getElementById("Celsius").checked) {
     var tempConversion = ((temp - 32) * 9) / 5;
@@ -9,6 +14,7 @@
     document.getElementById("convertedTemp").innerText = "Your converted temperature is " + tempConversion +  " degrees Farenheit."; //can't seem to get degree symbol to work: fix
   }
 }
+
 
 function resetForm() {
   document.getElementById("form").reset();
@@ -46,18 +52,10 @@ function resetForm() {
 } 
 
  
-
-
-
-
-
-
-
-
-
-
-
-
+function clearFields() {
+  document.getElementsByName("formField").value = ' ';
+} //not working yet
+//finish lines 42, 44-46, degree symbol
 
 
 /* Write a program that will convert a temperature from fahrenheit to celsius, or from celsius to fahrenheit. 
